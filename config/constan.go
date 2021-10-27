@@ -1,11 +1,12 @@
 package config
 
 const (
-	DB_tbl_counter        string = "tbl_counter"
-	DB_tbl_trx_sdsb4d_day string = "tbl_trx_sdsb4d_day"
-	STATUS_RUNNING        string = "background:#FFEB3B;font-weight:bold;color:black;"
-	STATUS_COMPLETE       string = "background:#8BC34A;font-weight:bold;color:black;"
-	STATUS_CANCEL         string = "background:#E91E63;font-weight:bold;color:white;"
+	DB_tbl_counter          string = "tbl_counter"
+	DB_tbl_trx_sdsb4d_day   string = "tbl_trx_sdsb4d_day"
+	DB_tbl_trx_sdsb4d_night string = "tbl_trx_sdsb4d_night"
+	STATUS_RUNNING          string = "background:#FFEB3B;font-weight:bold;color:black;"
+	STATUS_COMPLETE         string = "background:#8BC34A;font-weight:bold;color:black;"
+	STATUS_CANCEL           string = "background:#E91E63;font-weight:bold;color:white;"
 )
 
 const Sourcechar string = `ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 !@#$%^&*()-_=+[]{};:,.<>?/`
