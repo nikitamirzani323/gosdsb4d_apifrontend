@@ -3,8 +3,8 @@ package main
 import (
 	"log"
 
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/db"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/routers"
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/db"
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/routers"
 )
 
 func main() {

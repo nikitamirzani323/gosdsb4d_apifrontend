@@ -4,11 +4,11 @@ import (
 	"log"
 	"time"
 
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/entities"
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/helpers"
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/models"
 	"github.com/buger/jsonparser"
 	"github.com/gofiber/fiber/v2"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/entities"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/helpers"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/models"
 )
 
 func SdsbdayAll(c *fiber.Ctx) error {

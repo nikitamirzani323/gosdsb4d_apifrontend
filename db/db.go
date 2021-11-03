@@ -5,9 +5,9 @@ import (
 	"os"
 	"time"
 
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/helpers"
 	_ "github.com/go-sql-driver/mysql"
 	"github.com/joho/godotenv"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/helpers"
 )
 
 var db *sql.DB

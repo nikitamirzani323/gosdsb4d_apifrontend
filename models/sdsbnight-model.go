@@ -4,11 +4,11 @@ import (
 	"context"
 	"time"
 
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/config"
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/db"
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/entities"
+	"bitbucket.org/isbtotogroup/sdsb4d-apifrontend/helpers"
 	"github.com/gofiber/fiber/v2"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/config"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/db"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/entities"
-	"github.com/nikitamirzani323/gosdsb4d_apifrontend/helpers"
 )
 
 func Fetch_sdsbnightHome() (helpers.Response, error) {
@@ -24,7 +24,7 @@ func Fetch_sdsbnightHome() (helpers.Response, error) {
 			date_sdsb4dnight, 
 			prize1_sdsb4dnight , prize2_sdsb4dnight, prize3_sdsb4dnight
 			FROM ` + config.DB_tbl_trx_sdsb4d_night + ` 
-			ORDER BY date_sdsb4dnight DESC LIMIT 100
+			ORDER BY date_sdsb4dnight DESC LIMIT 365 
 		`
 
 	row, err := con.QueryContext(ctx, sql_select)
